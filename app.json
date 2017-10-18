@@ -1,12 +1,30 @@
 {
   "pages": [
-    "pages/test/test",
     "pages/index/index",
+    "pages/test/test",
     "pages/logs/logs"
   ],
   "window": {
     "navigationBarBackgroundColor": "#BBDEbb",
     "navigationBarTitleText": "Demo",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "backgroundColor":"#000",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/logs/logs",
+        "text":"历史记录"
+      },
+      {
+        "pagePath":"pages/test/test",
+        "text":"自测"
+      }
+    ]
   }
+
 }

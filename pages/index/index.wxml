@@ -12,5 +12,6 @@
   </view>
   <view>
     <text catchtap="click"  class="{{color}}">Hello</text>
+    <button bindtap="changeToTest">点击</button>
 </view>
 </view>

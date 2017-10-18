@@ -12,6 +12,11 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
     
   },
+  changeToTest:function(){
+    wx.navigateTo({
+      url: '../test/test',
+    })
+  },
   click: function () {
     console.log("点击了文字");
     if (flag) {
