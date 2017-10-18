@@ -19,3 +19,10 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.window{
+  color:#4995fa;
+}
+.window-red{
+    color:#D23933;
+}

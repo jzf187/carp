@@ -1,13 +1,29 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+var flag=true;
+var color;
 Page({
   data: {
+    color: "window",
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+    
+  },
+  click: function () {
+    console.log("点击了文字");
+    if (flag) {
+      color = "window-red";
+      flag = false;
+    } else {
+      color = "window";
+      flag = true;
+    }
+    this.setData({
+      color
+    });
   },
   //事件处理函数
   bindViewTap: function() {
@@ -43,7 +59,8 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
+
+    getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
